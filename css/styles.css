@@ -3,167 +3,42 @@
 /* основной color: #757575 */
 /* вторичный и ссылки color: #212121 */
 /* выделенная ссылка color: #2196F3 */
+:root{
+    --primary-text-color: #757575;
+    --accent-color: #2196F3;
+    --main-font: "Roboto";
+    --background-main: #E5E5E5;
 
-body{
-    font-family: Roboto; 
-    text-decoration: none;   
+    }
+html{
+    box-sizing: border-box;
 }
+body{
+    font-family: var(--main-font);
+    background-color: var(--background-main);
+   
+    }
 /* Header */
 .logo{
     text-decoration: none;
-    position: absolute;
-        width: 145px;
-        height: 31px;
-        left: 215px;
-        top: 24px;
-    font-family: 'Raleway';
-        font-style: normal;
+        font-family: 'Raleway';
         font-weight: 700;
         font-size: 26px;
-        line-height: 31px;
+        line-height: 1.19;
         /* identical to box height */
         letter-spacing: 0.03em;
     
-        color: #2196F3;
+        color: var(--accent-color);
 }
 .logo > span {
         font-family: 'Raleway';
-        font-style: normal;
         font-weight: 700;
         font-size: 26px;
-        line-height: 31px;
-        /* identical to box height */
-    
+        line-height: 1.19;
         letter-spacing: 0.03em;
         
         color: #212121;
 }
-.list{
-    list-style: none;
+.list .link{
     text-decoration: none;
 }
-.link-main{
-    text-decoration: none;
-    position: absolute;
-        width: 49px;
-        height: 16px;
-        left: 453px;
-        top: 32px;
-    
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 16px;
-        letter-spacing: 0.02em;
-    
-        color: #2196F3;
-}
-.link1-nav{
-    position: absolute;
-        width: 77px;
-        height: 16px;
-        left: 552px;
-        top: 32px;
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 16px;
-        letter-spacing: 0.02em;
-    
-        color: #212121;
-}
-.link2-nav{
-    position: absolute;
-        width: 68px;
-        height: 16px;
-        left: 679px;
-        top: 32px;
-    
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 16px;
-        letter-spacing: 0.02em;
-    
-        color: #212121;
-}
-.link1-mail{
-    position: absolute;
-        width: 135px;
-        height: 16px;
-        left: 1078px;
-        top: 32px;
-    
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 16px;
-        letter-spacing: 0.02em;
-    
-        color: #2196F3;
-}
-.link2-mail{
-    position: absolute;
-        width: 122px;
-        height: 16px;
-        left: 1263px;
-        top: 32px;
-    
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 16px;
-        letter-spacing: 0.02em;
-    
-        color: #757575;
-}
-/* Hero */
-.back-box{
-    position: absolute;
-        width: 1600px;
-        height: 600px;
-        left: 0px;
-        top: 80px;
-    
-        background: #2F303A;
-}
-.title-hero{
-    /* Эффективные решения для вашего бизнеса */
-    
-        position: absolute;
-        width: 696px;
-        height: 120px;
-        left: 452px;
-        top: 280px;
-    
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 900;
-        font-size: 44px;
-        line-height: 60px;
-        /* or 136% */
-        text-align: center;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-    
-        color: #FFFFFF;
-}
-.button-hero{
-    //* bg */
-    
-        position: absolute;
-        width: 200px;
-        height: 50px;
-        left: 700px;
-        top: 430px;
-    
-        background: #2196F3;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
-}
-/* Main */
