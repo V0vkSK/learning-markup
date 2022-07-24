@@ -9,6 +9,11 @@
     --accent-color: #2196F3;
     --main-font: "Roboto";
     --background-main: #E5E5E5;
+    --pure-white: #ffffff;
+    --background-hero: #2f303a;
+    --background-our-com: #F5F4FA;
+    --background-radio-button: #F5F4FA;
+    --background-footer: #2F303A;
 }
 
 html{
@@ -46,9 +51,57 @@ body{
         line-height: 1.19;
         color: var(--secondary-text);
 }
+.page-header{
+    background-color: var(--pure-white);
+
+}
+.nav.list{
+    display: flex;
+}
+/* тут когда я пишу классами не применяется margin-right.
+Т.е. селекторы
+.nav .nav-items:not(:last-child) 
+.items-nav:not(:last-child)
+не работают. 
+Я так понимаю что что-то их перебивает по уровню. Не пойму*/
+.nav li:not(:last-child){
+      margin-right: 50px;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1170px;
+    }
+
+.hero{
+    width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--background-hero);
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 94px;
+   
+}
+.title-hero{
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--pure-white);
+        padding-top: 200px;
+        padding-bottom: 40px;
+        margin-top: 0;
+        margin-bottom: 0;
+}
+
 .list {
     list-style: none;
-}.link{
+    margin-top: 0;
+}
+.link{
     text-decoration: none;
 }
 .link:hover, .link:focus{
@@ -57,14 +110,35 @@ body{
 .current{
     color: var(--accent-color);
 }
+.btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    color: white;
+    background: #2196F3;
+    border-radius: 4px;
+    padding: 10px 32px;
+}
 .feature-title{
+        margin-top: 0;
+        margin-bottom: 0;
         font-weight: 700;
         font-size: 14px;
         line-height: 1.14;
         text-transform: uppercase;
         color: var(--secondary-text);
 }
+.feature {
+    width: 1170px;
+    /* height: 101px; */
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 94px;
+  
+}
 .feature-text{
+        margin-top: 0;
+        margin-bottom: 0;
         font-weight: 400;
             font-size: 14px;
             line-height: 1.71;
@@ -72,11 +146,22 @@ body{
             color: var(--primary-text-color);
 }
 .work, .our-com{
-    font-weight: 700;
+        margin-top: 0;
+        font-weight: 700;
         font-size: 36px;
         line-height: 1.17;
-        text-align: center;
-        color: var(--secondary-text);
+}      
+.work-section{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: var(--secondary-text);
+    margin-bottom: 94px;
+    width: 1170px;
+   
+}
+.work {
+    margin-bottom: 50px;
 }
 .our-com-title{
         font-weight: 500;
@@ -92,32 +177,103 @@ body{
         text-align: center;
         color: var(--primary-text-color);
 }
-.examples-title{
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 2;
-        letter-spacing: 0.06em;
-        color: var(--secondary-text);
-}
-.examples-text{
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.87;
-        color: var(--primary-text-color);
-}
+
 .btn{
-    font-weight: 500;
-        font-size: 16px;
-        line-height: 1.62;
-        text-align: center;
-        color: var(--secondary-text);
-        background: #F5F4FA;
-}
-.btn:hover, .btn:focus{
         font-weight: 500;
         font-size: 16px;
         line-height: 1.62;
-        text-align: center;
         color: white;
         background: #2196F3;
+        border-radius: 4px;
+        padding: 10px 32px;
+       }
+.btn:hover, .btn:focus{
+        color: var(--pure-white);
+}
+
+.comanda{
+    border-color: var(--background-our-com);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1170px;
+  
+    }
+.our-com{
+    margin-bottom: 94px;
+}
+.footer{
+       background-color: var(--background-footer);
+   }
+.footer .logo > span{
+    color: var(--pure-white);
+}
+.container-footer{
+        width: 1600px;
+        height: 252px;
+        padding-left: 215px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        margin-right: auto;
+        margin-left: auto;
+        }
+.logo-footer{
+     margin-bottom: 20px;
+}
+.footer .list{
+        margin-bottom: 9px;
+        padding-left: 0;
+       
+}
+.mail-foot .link{    
+       color: var(--pure-white);
+}
+.mail-foot, .link-foot{
+    margin-bottom: 9px;
+}
+
+.link-foot .link{
+    color: rgba(255, 255, 255, 0.6);
+}
+.link-footer:hover, .link-footer:focus{
+    color: var(--accent-color);
+}
+/* Portfolio */
+.container-examples{
+    background-color: var(--background-main);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1170px;
+    outline: 1px solid red;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+}
+.examples-section{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.examples .picture{
+    margin-bottom: 20px;
+}
+.examples-title{
+    margin-top: 0;
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--secondary-text);
+}
+.examples-text{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--primary-text-color);
+}
+.bbtn{
+    margin-top: 0;margin-bottom: 50px;
 }

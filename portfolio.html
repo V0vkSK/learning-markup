@@ -15,40 +15,42 @@
 </head>
 
 <body>
-    <header>
-    
-        <nav class="navigation">
-            <a class="logo" href="./index.html">Web<span>Studio</span></a>
-            <ul class="list nav">
-                <li><a class="link" href="/./index.html">Студия</a></li>
-                <li><a class="link current" href="./portfolio.html">Портфолио</a></li>
-                <li><a class="link" href="">Контакты</a></li>
-            </ul>
-        </nav>
-    
-        <address>
-            <ul class="list mail">
-                <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>
-        </address>
-    
+
+    <header class="page-header">
+        <div class="container">
+            <nav>
+                <a class="logo" href="./index.html">Web<span>Studio</span></a>
+                <ul class="nav list">
+                    <li class="items-nav"><a href="./index.html" class="link">Студия</a></liv>
+                    <li class="items-nav"><a href="./portfolio.html" class="link current">Портфолио</a></liv>
+                    <li class="items-nav"><a href="" class="link">Контакты</a></liv>
+                </ul>
+            </nav>
+            <address class="contacts-us">
+                <ul class="list">
+                    <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                </ul>
+            </address>
+        </div>
     </header>
+
     <main>
+            <!-- container -->
+            <div class="container-examples">
             <!-- Фильтр -->
-            <div>
-                <button class="btn" type="button">Все</button>
-                <button class="btn" type="button">Веб-сайты</button>
-                <button class="btn" type="button">Приложения</button>
-                <button class="btn" type="button">Дизайн</button>
-                <button class="btn" type="button">Маркетинг</button>
+            <div class="bbtn">
+                <button class="butn" type="button">Все</button>
+                <button class="butn" type="button">Веб-сайты</button>
+                <button class="butn" type="button">Приложения</button>
+                <button class="butn" type="button">Дизайн</button>
+                <button class="butn" type="button">Маркетинг</button>
             </div>
-            
             <!-- Работы -->
-            <section>
+            <section class="examples-section">
             <ul class="list">
                 <li class="examples">
-                    <a class="link" href=""><img src="./images/technokryak.jpg" width="370" alt="Технокряк">
+                    <a class="link" href=""><img class="picture" src="./images/technokryak.jpg" width="370" alt="Технокряк">
                              <h2 class="examples-title">Технокряк</h2>
                              <p class="examlpes-text">Веб-сайт</p></a>  
                 </li>
@@ -94,17 +96,26 @@
                 </li>
             </ul>
         </section>
+        </div>
     </main>
     
-    <footer>
-        <a class="logo" href="./index.html">Web<span>Studio</span></a>
-            <address>
-            <ul class="list">
-                <li><a class="link" href="https://goo.gl/maps/FmunaXFPp9EdRUmp7">г. Киев, пр-т Леси Украинки, 26</a></li>
-                <li><a class="link" href="mailto:info@example.com">info@example.com</a></li>
-                <li><a class="link" href="tel:+380931111111">+38 099 111 11 11</a></li>
-            </ul>
-        </address>
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="logo-footer">
+                <a class="logo" href="./index.html">Web<span>Studio</span></a>
+            </div>
+    
+            <address class="adress-footer">
+                <ul class="list">
+                    <li class="mail-foot"><a class="link link-footer" href="https://goo.gl/maps/FmunaXFPp9EdRUmp7">г. Киев,
+                            пр-т Леси Украинки, 26</a></li>
+                    <li class="link-foot"><a class="link link-footer" href="mailto:info@example.com">info@example.com</a>
+                    </li>
+                    <li class="link-foot"><a class="link link-footer" href="tel:+380931111111">+38 099 111 11 11</a></li>
+                </ul>
+            </address>
+        </div>
+    
     </footer>
 
 </body>
