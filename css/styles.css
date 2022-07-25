@@ -36,7 +36,7 @@ body{
     }
     /* Утилиты */
 .list-mail .link {
-    display: block;
+    display: inline-flex;
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -106,15 +106,32 @@ body{
     align-items: center;
 }
 .list-mail .link{
-    width: 161px;
+    /* width: 161px; */
     text-align: right;
 }
-.contacts-items::before{
+
+.icon-mail::before{
+    display: inline-flex;
     content: '';
     width: 16px;
     height: 12px;
-    outline: 1px solid red;
     background-image: url('../images/envelope.svg');
+    margin-right: 10px;
+}
+.icon-mail:hover::before {
+    display: inline-flex;
+    content: '';
+    width: 16px;
+    height: 12px;
+    background-image: url('../images/envelope\ \(hover\).svg');
+    margin-right: 10px;
+}
+.icon-phone::before {
+    display: inline-flex;
+    content: '';
+    width: 10px;
+    height: 16px;
+    background-image: url('../images/smartphone.svg');
     align-content: center;
     margin-right: 10px;
 }
@@ -387,6 +404,9 @@ body{
         margin-bottom: 94px;
         justify-content: center;
 }
+/* .container-clients .link-clients{
+        background-color: var(--background-radio-button);
+} */
 .container-clients .list{
         display: flex;
         background-color: var(--pure-white);
