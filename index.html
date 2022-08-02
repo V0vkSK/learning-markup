@@ -36,7 +36,7 @@
             </li>
           </ul>
         </nav>
-        <!-- Не могу выровнять иконку с адресом -->
+
         <address class="contacts-us flexy">
           <ul class="list-mail list">
             <li class="contacts-items">
@@ -67,14 +67,37 @@
         <button class="btn" data-modal-open>Заказать услугу</button>
 
         <div class="backdrop is-hidden" data-modal>
-          <div class="modal">
-            <label>
-              Комментарий
-              <textarea name="" id="" cols="30" rows="10"></textarea>
+          <form class="modal">
+            <h2 class="title">Оставьте свои данные, мы вам перезвоним</h2>
+
+            <div class="form-field">
+              <label for="name" class="label">Имя</label>
+              <input class="input" type="text" name="name" id="name" />
+              <span class="icon-input"></span>
+            </div>
+
+            <label for="tel" class="label">Телефон</label>
+            <input class="input" type="tel" name="tel" id="tel" />
+
+            <label for="mail" class="label">Почта</label>
+            <input class="input" type="email" name="mail" id="mail" />
+
+            <label for="comment" class="label">Комментарий</label>
+            <textarea
+              class="comment"
+              name="comment"
+              id="comment"
+              placeholder="Введите текст"
+            ></textarea>
+
+            <input type="checkbox" name="policy" value="policy" id="policy" />
+            <label for="policy" class="checkbox"
+              >Соглашаюсь с рассылкой и принимаю
+              <span><a class="policy-link" href="">Условия договора</a></span>
             </label>
 
-            <button class="btn-close" data-modal-close>Закрыть</button>
-          </div>
+            <button class="btn-send" data-modal-close>Отправить</button>
+          </form>
         </div>
       </section>
 
