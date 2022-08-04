@@ -1,0 +1,97 @@
+.footer {
+  background-color: var(--background-footer);
+}
+.footer .logo > span {
+  color: var(--pure-white);
+}
+.main-footer-container {
+  display: flex;
+  width: 1600px;
+  height: 252px;
+  padding-left: 215px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.container-footer {
+  display: block;
+  margin-right: 70px;
+}
+/* .footer-cont2{
+            display: flex;
+        } */
+.logo-footer {
+  margin-bottom: 20px;
+}
+.footer .list {
+  /* display: flex; */
+  margin-bottom: 9px;
+  padding-left: 0;
+}
+.mail-foot .link {
+  font-style: normal;
+  color: var(--pure-white);
+}
+.mail-foot,
+.link-foot {
+  margin-bottom: 9px;
+}
+
+.link-foot .link {
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+}
+.link-footer:hover,
+.link-footer:focus {
+  color: var(--accent-color);
+}
+.footer-list {
+  display: flex;
+}
+
+.join {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.icon-instagram-third {
+  /* display: flex; */
+  width: 44px;
+  height: 44px;
+  background-image: url('../images/instagram3.svg'), url('../images/Ellipse.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+.icon-twitter-second {
+  /* display: flex; */
+  width: 44px;
+  height: 44px;
+  background-image: url('../images/twitter2.svg'), url('../images/Ellipse2.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+.icon-facebook-second {
+  /* display: flex; */
+  width: 44px;
+  height: 44px;
+  background-image: url('../images/facebook2.svg'), url('../images/Ellipse.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+.icon-link-second {
+  /* display: flex; */
+  width: 44px;
+  height: 44px;
+  background-image: url('../images/linkedin2.svg'), url('../images/Ellipse.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}

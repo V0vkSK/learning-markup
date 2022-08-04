@@ -392,13 +392,19 @@ textarea {
 }
 .checkbox-input {
   position: absolute;
+
   /* -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none; */
 }
-.checkbox-input:checked > .custom-box {
-  position: absolute;
+.checkbox-input:checked > .checkbox::before {
+  content: '';
+  width: 16px;
+  height: 15px;
+  margin-right: 8.38px;
   display: inline-block;
+  outline: 1px solid red;
+  background-image: url('../css/sprite.svg#icon-check');
 }
 .checkbox::before {
   display: inline-block;

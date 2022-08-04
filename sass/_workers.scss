@@ -1,0 +1,202 @@
+.work,
+.our-com {
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.work-list {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  margin-bottom: 94px;
+  width: 1170px;
+}
+.work-list .item {
+  margin-right: 30px;
+}
+.work-section {
+  color: var(--secondary-text);
+}
+.work {
+  margin-bottom: 50px;
+}
+
+.our-com-title {
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--secondary-text);
+}
+.our-com-container {
+  display: flex;
+  width: 1170px;
+  height: 428px;
+  margin-bottom: 94px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.our-com-text {
+  padding-bottom: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--primary-text-color);
+}
+.shadow {
+  margin-right: 30px;
+  /* display: flex; */
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.shadow:last-child {
+  margin-right: 0;
+}
+.first-com {
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  padding-top: 12px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  margin-right: 10px;
+}
+.first-com:hover {
+  background-color: var(--pure-white);
+}
+.first-com:hover .soc-inst {
+  fill: var(--accent-color);
+}
+.social-com {
+  width: 44px;
+  height: 44px;
+  padding-top: 12px;
+  margin-right: 10px;
+  border-radius: 50%;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-com:hover .soc-second {
+  fill: var(--pure-white);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-com:hover {
+  background-color: var(--accent-color);
+}
+.box-social {
+  display: flex;
+  width: 206px;
+  height: 44px;
+  margin-right: auto;
+  margin-left: auto;
+  /* justify-content: space-between; */
+}
+.soc-inst {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+.soc-second {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+/* .sociall-link-first:hover{
+    background-color: #AFB1B8;
+}
+.sociall-link-first:hover .soc-inst{
+    fill: var(--accent-color);
+} */
+
+/* .soc-inst:hover, .soc-inst:focus,
+.soc-second:hover{
+    fill : var(--accent-color);
+    background-color: var(--pure-white);
+} */
+.soc-twitter {
+  width: 20px;
+  height: 16.25px;
+  fill: #afb1b8;
+}
+
+.second.com:last-child {
+  margin-right: 0;
+}
+.btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  color: white;
+  background: #2196f3;
+  border-radius: 4px;
+  padding: 10px 32px;
+}
+.btn:hover,
+.btn:focus {
+  color: var(--pure-white);
+}
+.comanda-fon {
+  display: flex;
+  padding-top: 94px;
+  background-color: var(--background-radio-button);
+}
+.comanda {
+  /* background-color: var(--background-our-com); */
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1170px;
+}
+.our-com {
+  margin-bottom: 50px;
+}
+
+/* Social через ::after */
+/* .shadow::after{
+        content: '';
+        display: block;
+        height: 90px;
+        
+        background-repeat: no-repeat;
+}  
+.icon{
+        display: flex;
+        width: 206px;
+        height: 44px;
+        background-repeat: no-repeat;
+
+
+        background-image: url('../images/instagram2.svg'),
+        url('../images/twitter.svg'),
+        url('../images/facebook.svg'),
+        url('../images/linkedin.svg');
+    background-position: 32px 16px, 98px 29.88px, 157.16px 28px, 206px 28px;
+}
+
+
+.icon-instagram2::after{
+    background-image: url('../images/instagram2.svg'),
+                      url('../images/twitter.svg'),
+                      url('../images/facebook.svg'),
+                      url('../images/linkedin.svg');
+    background-position: 32px 16px, 98px 29.88px, 157.16px 28px, 206px 28px;                      
+    
+} 
+ .icon-social::after{
+    background-image: url('../images/instagram.svg'),
+                      url('../images/twitter.svg'),
+                      url('../images/facebook.svg'),
+                      url('../images/linkedin.svg');
+    background-position: 44px 28px, 98px 29.88px, 157.16px 28px, 206px 28px;
+} */
