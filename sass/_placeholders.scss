@@ -1,0 +1,24 @@
+.list {
+  list-style: none;
+  margin-top: 0;
+}
+
+.link {
+  text-decoration: none;
+  font-style: normal;
+}
+
+.link:hover,
+.icon-mail,
+.link:focus {
+  color: var(--accent-color);
+}
+.icon-mail:hover .svg-icon-mail {
+  fill: var(--accent-color);
+}
+.icon-phone:hover .svg-icon-phone {
+  fill: var(--accent-color);
+}
+.list .current {
+  color: var(--accent-color);
+}

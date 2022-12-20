@@ -1,0 +1,128 @@
+/* Полоска под меню */
+.nav .link {
+  position: relative;
+
+&::after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  content: '';
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  transform: scaleX(0);
+  transition: transform 250ms var(--cubic-hover);
+}
+&:hover::after {
+  transform: scaleX(1);
+}
+}
+/* Header */
+.logo {
+  text-decoration: none;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  padding-top: 24px;
+
+  color: var(--accent-color);
+
+ >span {
+ 
+  color: var(--secondary-text);
+}
+}
+.page-header {
+  background-color: var(--pure-white);
+}
+.nav,
+.list-mail,
+.flexy {
+  display: flex;
+  /* align-items: center; */
+}
+.list-mail .icon-phone {
+  display: flex;
+  justify-items: baseline;
+  text-align: right;
+}
+.contacts-items {
+  display: flex;
+  justify-items: center;
+  align-items: baseline;
+}
+/* Иконка через svg */
+.svg-icon-mail {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: #757575;
+
+&:hover {
+  fill: #2196f3;
+}
+}
+.svg-icon-phone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: #757575;
+
+&:hover {
+  fill: #2196f3;
+}
+}
+/* Иконка с помощью ::before */
+
+/* .icon-mail{
+    display: inline-flex;;
+    padding: 0;
+
+} */
+/* .icon-mail::before{
+    display: inline-flex;
+    content: '';
+    width: 16px;
+    height: 12px;
+    background-image: url('../images/envelope.svg');
+    margin-right: 10px;
+} */
+/* .icon-mail:hover::before {
+    display: inline-flex;
+    content: '';
+    width: 16px;
+    height: 12px;
+    background-image: url('../images/envelope\ \(hover\).svg');
+    margin-right: 10px;
+} */
+/* .icon-phone::before {
+    display: inline-flex;
+    content: '';
+    width: 10px;
+    height: 16px;
+    background-image: url('../images/smartphone.svg');
+    justify-content: center;
+    margin-right: 10px;
+} */
+.nav {
+  margin-left: 93px;
+}
+.contacts-items:not(:last-child),
+.items-nav:not(:last-child) {
+  margin-right: 50px;
+}
+
+.icon-mail {
+  align-items: baseline;
+}
+.contacts-us {
+  margin-left: auto;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+width: 1170px;
+}
